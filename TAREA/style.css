@@ -15,14 +15,14 @@ body {
 	margin: 0 auto;
 	background-color: #fff;
 	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	box-shadow: 0 2px 5px rgba(9, 216, 243, 0.712);
   }
   
   label {
 	display: block;
 	margin-top: 20px;
-	color: #666;
+	color: #1b1b1b;
 	font-weight: bold;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -45,7 +45,7 @@ body {
 	display: block;
 	margin: 20px auto 0;
 	padding: 10px 20px;
-	background-color: #3498db;
+	background-color: #11334b;
 	color: #fff;
 	border: none;
 	border-radius: 3px;
