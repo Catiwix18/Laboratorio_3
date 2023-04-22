@@ -11,17 +11,20 @@
 	  	<input type="radio" name="monedaOrigen" value="dolar" checked onclick="muestraOpccion()"> Dolar<br/>
     	<input type="radio" name="monedaOrigen" value="soles" onclick="muestraOpccion()"> Soles <br/>
     	<input type="radio" name="monedaOrigen" value="euro" onclick="muestraOpccion()"> Euro <br/>
+	   
+		<label for="amount">Monto a cambiar:</label>
+	  	<input type="number" id="cantidad" name="cantidad" min="0" step="0.01">
+  
+	  
   
 	  <label for="currency-to">Moneda a recibir:</label>
 	
 		<input type="radio" name="monedaDestino" value="dolar" checked onclick="muestraOpccion()"> Dolar<br/>
     	<input type="radio" name="monedaDestino" value="soles" onclick="muestraOpccion()"> Soles <br/>
     	<input type="radio" name="monedaDestino" value="euro" onclick="muestraOpccion()"> Euro <br/>
-  
-	  <label for="amount">Monto a cambiar:</label>
-	  <input type="number" id="cantidad" name="cantidad" min="0" step="0.01">
-  
-	  <button type="button" onclick="calcularTotal()">Calcular</button>
+		
+	<button type="button" onclick="calcularTotal()">COTIZAR</button>
+	  
 	</form>
 	<div id="resultado"></div>
 	<script src="script.js"></script>

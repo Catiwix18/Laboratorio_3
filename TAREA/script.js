@@ -21,17 +21,17 @@ function muestraOpccion() {
   
 	var tipoCambio = 0;
   
-	if (monedaOrigenSeleccionada === "dolar" && monedaDestinoSeleccionada === "soles") {
-	  tipoCambio = 4.00;
-	} else if (monedaOrigenSeleccionada === "dolar" && monedaDestinoSeleccionada === "euro") {
-	  tipoCambio = 0.85;
-	} else if (monedaOrigenSeleccionada === "soles" && monedaDestinoSeleccionada === "dolar") {
+	if (monedaOrigenSeleccionada === "dolar" && monedaDestinoSeleccionada === "soles(s)") {
+	  tipoCambio = 3.80;
+	} else if (monedaOrigenSeleccionada === "dolar" && monedaDestinoSeleccionada === "euro(s)") {
+	  tipoCambio = 0.75;
+	} else if (monedaOrigenSeleccionada === "soles" && monedaDestinoSeleccionada === "dolar(s)") {
 	  tipoCambio = 0.25;
-	} else if (monedaOrigenSeleccionada === "soles" && monedaDestinoSeleccionada === "euro") {
+	} else if (monedaOrigenSeleccionada === "soles" && monedaDestinoSeleccionada === "euro(s)") {
 	  tipoCambio = 0.21;
-	} else if (monedaOrigenSeleccionada === "euro" && monedaDestinoSeleccionada === "dolar") {
+	} else if (monedaOrigenSeleccionada === "euro" && monedaDestinoSeleccionada === "dolar(s)") {
 	  tipoCambio = 1.18;
-	} else if (monedaOrigenSeleccionada === "euro" && monedaDestinoSeleccionada === "soles") {
+	} else if (monedaOrigenSeleccionada === "euro" && monedaDestinoSeleccionada === "soles(s)") {
 	  tipoCambio = 4.79;
 	}
   
@@ -63,7 +63,7 @@ function muestraOpccion() {
 	var tipoCambio = 0;
   
 	if (monedaOrigenSeleccionada === "dolar" && monedaDestinoSeleccionada === "soles") {
-	  tipoCambio = 4.00;
+	  tipoCambio = 3.80;
 	} else if (monedaOrigenSeleccionada === "dolar" && monedaDestinoSeleccionada === "euro") {
 	  tipoCambio = 0.85;
 	} else if (monedaOrigenSeleccionada === "soles" && monedaDestinoSeleccionada === "dolar") {
@@ -78,5 +78,5 @@ function muestraOpccion() {
 	
 	var montoConvertido = cantidad * tipoCambio;
 	
-	document.getElementById("resultado").innerHTML = "Recibirás " + montoConvertido.toFixed(2) + " " + monedaDestinoSeleccionada;
+	document.getElementById("resultado").innerHTML = "Te toca recibir " + montoConvertido.toFixed(2) + " " + monedaDestinoSeleccionada;
 	}
