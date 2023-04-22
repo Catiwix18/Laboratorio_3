@@ -22,17 +22,17 @@ function muestraOpccion() {
 	var tipoCambio = 0;
   
 	if (monedaOrigenSeleccionada === "dolar" && monedaDestinoSeleccionada === "soles(s)") {
-	  tipoCambio = 3.80;
+	  tipoCambio = 3.76;
 	} else if (monedaOrigenSeleccionada === "dolar" && monedaDestinoSeleccionada === "euro(s)") {
-	  tipoCambio = 0.75;
+	  tipoCambio = 0.9;
 	} else if (monedaOrigenSeleccionada === "soles" && monedaDestinoSeleccionada === "dolar(s)") {
-	  tipoCambio = 0.25;
+	  tipoCambio = 0.27;
 	} else if (monedaOrigenSeleccionada === "soles" && monedaDestinoSeleccionada === "euro(s)") {
 	  tipoCambio = 0.21;
 	} else if (monedaOrigenSeleccionada === "euro" && monedaDestinoSeleccionada === "dolar(s)") {
-	  tipoCambio = 1.18;
+	  tipoCambio = 1.11;
 	} else if (monedaOrigenSeleccionada === "euro" && monedaDestinoSeleccionada === "soles(s)") {
-	  tipoCambio = 4.79;
+	  tipoCambio = 4.17;
 	}
   
 	document.getElementById("tipo-cambio").innerHTML = "Tipo de cambio: 1 " + monedaOrigenSeleccionada + " = " + tipoCambio + " " + monedaDestinoSeleccionada;
